@@ -1,6 +1,7 @@
-cat pre-miRNAs.xx > pre-miRNAs.xx
-cat mature-miRNAs.xx > mature-miRNAs.xx
-cat star_miRNAs.xx > star_miRNAs.xx
+# optional: merging multiple files with a clear pattern in the name
+# cat pre-miRNAs*.xx > pre-miRNAs.xx
+# cat mature-miRNAs*.xx > mature-miRNAs.xx
+# cat star_miRNAs*.xx > star_miRNAs.xx
 
 for file in *.txt # for all files with .txt extension in folder
 do  
