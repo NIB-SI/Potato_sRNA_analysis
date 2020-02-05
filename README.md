@@ -1,2 +1,2 @@
 # Potato_sRNA_analysis
-small RNA analyses, S. tuberosum
+12. small RNA analyses [S. tuberosum]
