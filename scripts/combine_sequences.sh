@@ -15,8 +15,8 @@ do
     line=$(head -5 "$file" | tail -1) # read fifth line to a string
     str1=${line%% *} # split string by space
     str2="${str1//.}" # remove dots
-    echo $line01 >> mature-miRNAs.fasta # write string to a file
-    echo $str2 >> mature-miRNAs.fasta
+    echo $line01 >> mature_miRNAs.fasta # write string to a file
+    echo $str2 >> mature_miRNAs.fasta
 
     line=$(head -6 "$file" | tail -1)
     str1=${line%% *}
