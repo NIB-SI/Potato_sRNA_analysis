@@ -1,3 +1,3 @@
 # 
 
-Minimal example file input in /MIRNAs/ directory
+Minimal example file input in /MIRNAs/ subdirectory
