@@ -26,11 +26,11 @@ require(tictoc)
 mainDir = getwd()
 inputFolder = "../input/MIRNAs"
 outputFolder = "../output/"
-whereTo1 = paste0(file.path(mainDir, outputFolder), "/", "miRNA_5p/3p_grouping.txt")
-whereTo2 = paste0(file.path(mainDir, outputFolder), "/", "isomiRs.txt")
+whereTo1 = paste0(file.path(outputFolder), "/", "miRNA_5p-3p_grouping.txt")
+whereTo2 = paste0(file.path(outputFolder), "/", "isomiRs.txt")
 
 myFiles = list.files(path = file.path(mainDir, inputFolder), pattern = "\\.txt$")
-dir.create(file.path(mainDir, outputFolder), showWarnings = FALSE)
+dir.create(file.path(outputFolder), showWarnings = FALSE)
 file.create(whereTo1)
 file.create(whereTo2)
 # colnames output 1
