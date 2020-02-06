@@ -45,7 +45,15 @@ Expecting input from Potato_sRNA_analysis/input/MIRNAs/
 Writing output to Potato_sRNA_analysis/output/
 
 ## Perl scipt: sRNA_counts.pl
-
+```
+$ ./sRNA_counts.pl
+Usage: sRNA_counts options files ...
+Options:
+  -seqtab=inpseq.fasta      - sequence selection file (fasta format)
+  -output=outfn.csv         - tab separated output file (D=stdin)
+  -partial                  - also match as a subsequence (D=exact match)
+  inpfn.fasta               - input file (fasta format)
+```
 
 
 # Useful links
