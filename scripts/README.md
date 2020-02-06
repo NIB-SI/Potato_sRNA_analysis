@@ -46,6 +46,10 @@ Rscript -e "rmarkdown::render('./Potato_sRNA_analysis/scripts/group_miRNA_sequen
 
 Described at [How to Install and Use the Linux Bash Shell on Windows 10](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/)
 
+## Cygwin
+
+[Cygwin User's Guide](https://cygwin.com/cygwin-ug-net.html)
+
 ## Shiny and R Markdown
 
 [How to launch a Shiny app](https://shiny.rstudio.com/articles/running.html/)
