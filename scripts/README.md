@@ -25,6 +25,7 @@ R -e 'devtools::install_github("AnalytixWare/ShinySky")'
 # run app
 R -e "shiny::runApp('./Potato_sRNA_analysis/scripts/MIR_loci_overlaps.R')"
 ```
+Input/Output interactive, however is suggested to use ../input/ ../output/ directories
 
 ## Markdown script: group_miRNA_sequences.Rmd
 ```
@@ -33,8 +34,15 @@ R -e 'install.packages("rmarkdown", repos="https://cran.rstudio.com/")'
 # run script
 Rscript -e "rmarkdown::render('./Potato_sRNA_analysis/scripts/group_miRNA_sequences.Rmd')"
 ```
+Expecting input from Potato_sRNA_analysis/input/MIRNAs/
+
+Writing output to Potato_sRNA_analysis/output/
 
 ## Bash script: combine_sequences.sh
+
+Expecting input from Potato_sRNA_analysis/input/MIRNAs/
+
+Writing output to Potato_sRNA_analysis/output/
 
 ## Perl scipt: sRNA_counts.pl
 
@@ -57,3 +65,9 @@ Described at [How to Install and Use the Linux Bash Shell on Windows 10](https:/
 [Welcome to Shiny](https://shiny.rstudio.com/tutorial/written-tutorial/lesson1/)
 
 [R Markdown introduction](https://rmarkdown.rstudio.com/lesson-1.html)
+
+## FAIR data
+
+[The FAIR Guiding Principles for scientific data management and stewardship](https://www.nature.com/articles/sdata201618)
+[pISA][https://github.com/NIB-SI/pISA]
+[SEEK](https://seek4science.org/)
