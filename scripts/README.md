@@ -30,8 +30,15 @@ git clone https://github.com/NIB-SI/Potato_sRNA_analysis.git
 R -e "shiny::runApp('./Potato_sRNA_analysis/scripts/MIR_loci_overlaps.R')"
 
 
-# Bash script: combine_sequences.sh
-
 # Markdown script: group_miRNA_sequences.Rmd
+
+R -e 'install.packages("rmarkdown", repos="https://cran.rstudio.com/")'
+
+apt-get install pandoc
+
+Rscript -e "rmarkdown::render('./Potato_sRNA_analysis/scripts/group_miRNA_sequences.Rmd')"
+
+
+# Bash script: combine_sequences.sh
 
 # Perl scipt: sRNA_counts.pl
