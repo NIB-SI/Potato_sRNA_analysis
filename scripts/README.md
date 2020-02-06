@@ -31,13 +31,13 @@ R -e "shiny::runApp('./Potato_sRNA_analysis/scripts/MIR_loci_overlaps.R')"
 
 
 # Markdown script: group_miRNA_sequences.Rmd
-
+```
 R -e 'install.packages("rmarkdown", repos="https://cran.rstudio.com/")'
 
 apt-get install pandoc
 
 Rscript -e "rmarkdown::render('./Potato_sRNA_analysis/scripts/group_miRNA_sequences.Rmd')"
-
+```
 
 # Bash script: combine_sequences.sh
 
