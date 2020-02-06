@@ -24,8 +24,8 @@ require(tictoc)
 
 
 mainDir = getwd()
-inputFolder = "MIRNAs"
-outputFolder = "output"
+inputFolder = "../input/MIRNAs"
+outputFolder = "../output/"
 whereTo1 = paste0(file.path(mainDir, outputFolder), "/", "miRNA_5p/3p_grouping.txt")
 whereTo2 = paste0(file.path(mainDir, outputFolder), "/", "isomiRs.txt")
 
