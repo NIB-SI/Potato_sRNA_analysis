@@ -37,3 +37,19 @@ Rscript -e "rmarkdown::render('./Potato_sRNA_analysis/scripts/group_miRNA_sequen
 ## Bash script: combine_sequences.sh
 
 ## Perl scipt: sRNA_counts.pl
+
+
+
+# Useful links
+
+## Bash on Ubuntu on Windows
+
+Described at [How to Install and Use the Linux Bash Shell on Windows 10](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/)
+
+## Shiny and R Markdown
+
+[How to launch a Shiny app](https://shiny.rstudio.com/articles/running.html/)
+
+[Welcome to Shiny](https://shiny.rstudio.com/tutorial/written-tutorial/lesson1/)
+
+[R Markdown introduction](https://rmarkdown.rstudio.com/lesson-1.html)
