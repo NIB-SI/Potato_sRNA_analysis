@@ -39,6 +39,9 @@ Expecting input from Potato_sRNA_analysis/input/MIRNAs/
 Writing output to Potato_sRNA_analysis/output/
 
 ## Bash script: combine_sequences.sh
+```
+sh combine_sequences.sh
+```
 
 Expecting input from Potato_sRNA_analysis/input/MIRNAs/
 
