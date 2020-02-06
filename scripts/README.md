@@ -58,6 +58,14 @@ Options:
   inpfn.fasta               - input file (fasta format)
 ```
 
+## Unique IDs with occurence count
+```
+# using one file
+INP="test.fasta"
+awk '/^>/ {$0=$0"_Seq"++count[$0]}1' $INP | sponge $INP
+# or without sponge, using input output files
+awk '/^>/ {$0=$0"_Seq"++count[$0]}1' input.fasta > output.fasta
+```
 
 # Useful links
 
