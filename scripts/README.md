@@ -96,4 +96,6 @@ Described at [How to Install and Use the Linux Bash Shell on Windows 10](https:/
 
 [pISA](https://github.com/NIB-SI/pISA)
 
+[pISAR](https://github.com/NIB-SI/pisar)
+
 [SEEK](https://seek4science.org/)
