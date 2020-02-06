@@ -58,6 +58,11 @@ Described at [How to Install and Use the Linux Bash Shell on Windows 10](https:/
 
 [Cygwin User's Guide](https://cygwin.com/cygwin-ug-net.html)
 
+## Wine
+
+[Wine](https://www.winehq.org/)
+
+
 ## Shiny and R Markdown
 
 [How to launch a Shiny app](https://shiny.rstudio.com/articles/running.html/)
