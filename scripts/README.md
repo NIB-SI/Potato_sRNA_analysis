@@ -2,8 +2,8 @@
 
 # Shiny script: MIR_loci_overlaps.R 
 
-## run on Linux
-
+## run on Ubuntu-like OS
+```
 apt install r-base
 
 apt-get install libssl-dev
@@ -28,7 +28,7 @@ R -e 'devtools::install_github("AnalytixWare/ShinySky")'
 git clone https://github.com/NIB-SI/Potato_sRNA_analysis.git
 
 R -e "shiny::runApp('./Potato_sRNA_analysis/scripts/MIR_loci_overlaps.R')"
-
+```
 
 # Markdown script: group_miRNA_sequences.Rmd
 ```
