@@ -25,6 +25,8 @@ R -e 'devtools::install_github("AnalytixWare/ShinySky")'
 # run app
 R -e "shiny::runApp('./Potato_sRNA_analysis/scripts/MIR_loci_overlaps.R')"
 ```
+or use 🍂 https://nib-si.shinyapps.io/MIR_loci_overlaps/
+
 Input/Output interactive, however is suggested to use ../input/ ../output/ directories
 
 ## Markdown script: group_miRNA_sequences.Rmd
