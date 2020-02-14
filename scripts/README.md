@@ -1,5 +1,7 @@
 # run scripts on Ubuntu based Linux distribution 
 
+## prior to running scripts
+
 ```
 apt install r-base
 
@@ -9,6 +11,16 @@ apt-get install pandoc
 
 git clone https://github.com/NIB-SI/Potato_sRNA_analysis.git
 
+```
+
+## In the case you will ever have non-unique FASTA IDs, make them unique
+```
+apt-get install moreutils
+# using one file
+INP="test.fasta"
+awk '/^>/ {$0=$0"_Seq"++count[$0]}1' $INP | sponge $INP
+# or without sponge, using input output files
+awk '/^>/ {$0=$0"_Seq"++count[$0]}1' input.fasta > output.fasta
 ```
 
 ## Shiny script: MIR_loci_overlaps.R 
@@ -58,15 +70,6 @@ Options:
   -output=outfn.csv         - tab separated output file (D=stdin)
   -partial                  - also match as a subsequence (D=exact match)
   inpfn.fasta               - input file (fasta format)
-```
-
-## Unique IDs with occurence count
-```
-# using one file
-INP="test.fasta"
-awk '/^>/ {$0=$0"_Seq"++count[$0]}1' $INP | sponge $INP
-# or without sponge, using input output files
-awk '/^>/ {$0=$0"_Seq"++count[$0]}1' input.fasta > output.fasta
 ```
 
 # Useful links
