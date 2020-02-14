@@ -11,15 +11,17 @@ apt-get install pandoc
 
 git clone https://github.com/NIB-SI/Potato_sRNA_analysis.git
 
+apt-get install moreutils
+
 ```
 
 ## In the case you will ever have non-unique FASTA IDs, make them unique
+### one of possible ways as follows:
 ```
-apt-get install moreutils
-# using one file
+# changing the existing fasta file
 INP="test.fasta"
 awk '/^>/ {$0=$0"_Seq"++count[$0]}1' $INP | sponge $INP
-# or without sponge, using input output files
+# or without sponge, using input/output files
 awk '/^>/ {$0=$0"_Seq"++count[$0]}1' input.fasta > output.fasta
 ```
 
