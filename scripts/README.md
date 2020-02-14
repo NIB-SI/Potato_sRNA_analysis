@@ -74,7 +74,7 @@ Options:
   inpfn.fasta               - input file (fasta format)
 ```
 
-📝 # Useful links
+# Useful links 📝 
 
 ## Bash on Ubuntu on Windows
 
