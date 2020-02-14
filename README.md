@@ -9,3 +9,6 @@ scripts
 output
 ```
 tree structure
+
+
+More about scripts in /scripts/README.md
