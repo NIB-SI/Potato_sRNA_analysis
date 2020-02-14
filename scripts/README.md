@@ -1,4 +1,4 @@
-# run scripts on Ubuntu based Linux distribution 
+# run scripts on Ubuntu based Linux distribution  📚
 
 ## prior to running scripts
 
@@ -25,7 +25,7 @@ awk '/^>/ {$0=$0"_Seq"++count[$0]}1' $INP | sponge $INP
 awk '/^>/ {$0=$0"_Seq"++count[$0]}1' input.fasta > output.fasta
 ```
 
-## Shiny script: MIR_loci_overlaps.R 
+## Shiny script: MIR_loci_overlaps.R 📓
 
 ```
 R -e 'install.packages(c("Rcpp", "httpuv"))'
@@ -43,7 +43,7 @@ or use 🍂 https://nib-si.shinyapps.io/MIR_loci_overlaps/
 
 Input/Output interactive, however is suggested to use ../input/ ../output/ directories
 
-## Markdown script: group_miRNA_sequences.Rmd
+## Markdown script: group_miRNA_sequences.Rmd 📓
 ```
 R -e 'install.packages("rmarkdown", repos="https://cran.rstudio.com/")'
 
@@ -54,7 +54,7 @@ Expecting input from Potato_sRNA_analysis/input/MIRNAs/
 
 Writing output to Potato_sRNA_analysis/output/
 
-## Bash script: combine_sequences.sh
+## Bash script: combine_sequences.sh 📓
 ```
 sh combine_sequences.sh
 ```
@@ -63,7 +63,7 @@ Expecting input from Potato_sRNA_analysis/input/MIRNAs/
 
 Writing output to Potato_sRNA_analysis/output/
 
-## Perl scipt: sRNA_counts.pl
+## Perl scipt: sRNA_counts.pl 📓
 ```
 $ ./sRNA_counts.pl
 Usage: sRNA_counts options files ...
