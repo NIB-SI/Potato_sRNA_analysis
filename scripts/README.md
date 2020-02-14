@@ -15,8 +15,8 @@ apt-get install moreutils
 
 ```
 
-## In the case you will ever have non-unique FASTA IDs, make them unique
-### one of possible ways as follows:
+## In case of non-unique FASTA IDs -> make them unique
+### 🏷 one possible way as follows:
 ```
 # changing the existing fasta file
 INP="test.fasta"
