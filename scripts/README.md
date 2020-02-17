@@ -20,7 +20,7 @@ apt-get install moreutils
 ```
 # changing the existing fasta file
 INP="test.fasta"
-awk '/^>/ {$0=$0"_Seq"++count[$0]}1' $INP | sponge $INP
+awk '/^>/ {$0=$0".Seq"++count[$0]}1' $INP | sponge $INP
 # or without sponge, using input/output files
 awk '/^>/ {$0=$0"_Seq"++count[$0]}1' input.fasta > output.fasta
 ```
@@ -58,10 +58,17 @@ Writing output to Potato_sRNA_analysis/output/
 ```
 sh combine_sequences.sh
 ```
-
 Expecting input from Potato_sRNA_analysis/input/MIRNAs/
 
 Writing output to Potato_sRNA_analysis/output/
+
+
+## 📓 Bash script: uniqueString_allIDs.sh
+```
+ sh uniqueString_allIDs.sh pathTo/input.fasta outputDirectory 1
+```
+Provide path to the input fasta file (e.g. ../input/input.fasta), output directory (e.g. ../output) and number of threads (e.g. 1).
+
 
 ## 📓 Perl scipt: sRNA_counts.pl
 ```
