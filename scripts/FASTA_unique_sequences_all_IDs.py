@@ -5,10 +5,10 @@
 import sys
 from Bio import SeqIO
 
-param1= sys.argv[1] # ./path/first_occurence.txt
-param2= sys.argv[2] # ./path/combinedID.txt
-param3= sys.argv[3] # ./path/tmp_output.fasta
-param4= sys.argv[4] # ./path/output.fasta
+param1 = sys.argv[1] # ./path/first_occurence.txt
+param2 = sys.argv[2] # ./path/combinedID.txt
+param3 = sys.argv[3] # ./path/tmp_output.fasta
+param4 = sys.argv[4] # ./path/output.fasta
 
 f1 = open(param1, "r")
 a1 = f1.readlines()
