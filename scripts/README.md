@@ -88,14 +88,12 @@ Options:
 ```
 apt-get install dos2unix
 
- $ dos2unix --help
+$ dos2unix --help
 dos2unix 6.0.4 (2013-12-30)
 Usage: dos2unix [options] [file ...] [-n infile outfile ...]
 ...
 ```
-<https://linux.die.net/man/1/dos2unix>
-
-see also <https://en.wikipedia.org/wiki/Unix2dos>
+<https://en.wikipedia.org/wiki/Unix2dos>
 
 ## Bash on Ubuntu on Windows
 
