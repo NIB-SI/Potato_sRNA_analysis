@@ -1,7 +1,7 @@
 #!/bin/sh
 # zagor
 
-# sh uniqueString_allIDs.sh ../input/input.fasta ../output 4
+# sh FASTA_unique_sequences_all_IDs.sh ../input/input.fasta ../output 4
 
 # remove duplicates by sequence
 # write IDs of duplicates to a file
@@ -12,7 +12,7 @@
 if [[ $# -lt 3 ]]; then
     echo "Arguments not supplied."
     echo "Provide path to the input fasta, output folder and number of threads."
-    echo "e.g.     sh uniqueString_allIDs.sh ../input/input.fasta ../output 4"
+    echo "e.g.     sh FASTA_unique_sequences_all_IDs.sh ../input/input.fasta ../output 4"
     exit 1
 fi
 
