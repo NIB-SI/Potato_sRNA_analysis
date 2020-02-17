@@ -63,7 +63,7 @@ Expecting input from Potato_sRNA_analysis/input/MIRNAs/
 Writing output to Potato_sRNA_analysis/output/
 
 
-## 📓 Bash script: uniqueString_allIDs.sh
+## 📓 Bash script: FASTA_unique_sequences_all_IDs.sh
 ```
 # pip install biopython
 sh uniqueString_allIDs.sh pathTo/input.fasta outputDirectory 1
