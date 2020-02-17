@@ -66,7 +66,7 @@ Writing output to Potato_sRNA_analysis/output/
 ## 📓 Bash script: FASTA_unique_sequences_all_IDs.sh
 ```
 # pip install biopython
-sh uniqueString_allIDs.sh pathTo/input.fasta outputDirectory 1
+sh FASTA_unique_sequences_all_IDs.sh pathTo/input.fasta outputDirectory 1
 ```
 Provide path to the input fasta file (e.g. ../input/input.fasta), output directory (e.g. ../output) and number of threads (e.g. 1).
 
