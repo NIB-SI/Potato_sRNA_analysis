@@ -56,7 +56,7 @@ python3 -c "\
 try:
     import Bio
     import subprocess
-    subprocess.call('python3 uniqueString_allIDs.py $out"/first_occurence.txt" $out"/combinedID.txt" $out"/tmp_output.fasta" $out"/output.fasta"', shell=True)
+    subprocess.call('python3 FASTA_unique_sequences_all_IDs.py $out"/first_occurence.txt" $out"/combinedID.txt" $out"/tmp_output.fasta" $out"/output.fasta"', shell=True)
 except ImportError:
     print('\ninstall biopython using     pip install biopython     command')"
 
