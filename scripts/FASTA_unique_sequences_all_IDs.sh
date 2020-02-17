@@ -59,7 +59,7 @@ python3 -c "\
 try:
     import Bio
     import subprocess
-    subprocess.call('python3 FASTA_unique_sequences_all_IDs.py $out"/first_occurence.txt" $out"/combinedID.txt" $out"/tmp_output.fasta" $out"/output_"$fout', shell=True)
+    subprocess.call('python3 FASTA_unique_sequences_all_IDs.py $out"/first_occurence.txt" $out"/combinedID.txt" $out"/tmp_output.fasta" $out"/unique_"$fout', shell=True)
 except ImportError:
     print('\ninstall biopython using     pip install biopython     command')"
 
@@ -68,4 +68,4 @@ rm $out"/list_of_duplicated_seqs.txt"
 rm $out"/tmp_output.fasta"
 rm $out"/combinedID.txt"
 
-echo "Your output file is:" $out"/output_"$fout
+echo "Your output file is:" $out"/unique_"$fout
