@@ -84,6 +84,19 @@ Options:
 
 # 📝 Useful links 
 
+## convert line breaks from DOS to Unix format (dos2unix) and vice versa (unix2dos)
+```
+apt-get install dos2unix
+
+ $ dos2unix --help
+dos2unix 6.0.4 (2013-12-30)
+Usage: dos2unix [options] [file ...] [-n infile outfile ...]
+...
+```
+<https://linux.die.net/man/1/dos2unix>
+
+see also <https://en.wikipedia.org/wiki/Unix2dos>
+
 ## Bash on Ubuntu on Windows
 
 Described at [How to Install and Use the Linux Bash Shell on Windows 10](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/)
