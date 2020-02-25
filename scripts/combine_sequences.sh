@@ -13,8 +13,6 @@ fi
 
 in=${1%/}
 out=${2%/}
-echo $in
-echo $out
 
 touch $out/pre-miRNAs.fasta
 touch $out/mature_miRNAs.fasta
