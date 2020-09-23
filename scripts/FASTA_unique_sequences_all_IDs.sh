@@ -39,7 +39,7 @@ fout=$(basename $in)
 # echo $fout
 
 
-seqkit rmdup --ignore-case --by-seq \
+seqkit rmdup --ignore-case --id-ncbi --by-seq \
 --dup-num-file $out"/number_and_list_of_duplicated_seqs.txt" \
 --line-width 0 --out-file $out"/tmp_output.fasta" \
 --threads $3 $in
@@ -48,9 +48,9 @@ seqkit rmdup --ignore-case --by-seq \
 # ignore the number of duplicates, keep only IDs
 cut -f2 $out"/number_and_list_of_duplicated_seqs.txt" > $out"/list_of_duplicated_seqs.txt"
 # list of kept sequences, ID to be extended
-sed 's/,/\t/g' $out"/list_of_duplicated_seqs.txt" | cut -f1 > $out"/first_occurence.txt"
+sed 's/,/\t/g' $out"/list_of_duplicated_seqs.txt" | cut -d ' ' -f1 > $out"/first_occurence.txt"
 # replace with concatenated IDs
-sed 's/, /_/g' $out"/list_of_duplicated_seqs.txt" > $out"/combinedID.txt"
+sed 's/, /|/g' $out"/list_of_duplicated_seqs.txt" > $out"/combinedID.txt"
 
 # replace IDs using python script
 # replace IDs using python script
