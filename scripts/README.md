@@ -69,9 +69,11 @@ Writing output to Potato_sRNA_analysis/output/
 sh FASTA_unique_sequences_all_IDs.sh pathTo/input.fasta outputDirectory 1
 ```
 Check python and pip version using ```pip --version;  python --version```. If version 3 is not your default versions, use ```pip3 install biopython```.
+
 Provide path to the input fasta file (e.g. ../input/input.fasta), output directory (e.g. ../output) and number of threads (e.g. 1).
-If you don't want ncbi-styled IDs (i.e. only pure IDs without any text followed after space) remove ```--id-ncbi``` from the ```seqkit rmdup --ignore-case --id-ncbi --by-seq \``` line and ``` -d ' '```  from the ``` sed 's/,/\t/g' $out"/list_of_duplicated_seqs.txt" | cut -d ' ' -f1 > $out"/first_occurence.txt"```  line.
-If you wish to change | ID separateor with e.g. >, replace | with > in ``` sed 's/, /|/g' $out"/list_of_duplicated_seqs.txt" > $out"/combinedID.txt" ``` line.
+
+If you don't want ncbi-styled IDs (i.e. only 'pure' IDs without any additional text/marks post first space) remove ```--id-ncbi``` from the ```seqkit rmdup --ignore-case --id-ncbi --by-seq \``` line and ``` -d ' '```  from the ``` sed 's/,/\t/g' $out"/list_of_duplicated_seqs.txt" | cut -d ' ' -f1 > $out"/first_occurence.txt"```  line.
+If you wish to change | ID separator (e.g. stT-miR156a MIMAT0031296|stT-miR156b MIMAT0031297) with e.g. > (or other character combination), replace | with > (or any other character combination) in ``` sed 's/, /|/g' $out"/list_of_duplicated_seqs.txt" > $out"/combinedID.txt" ``` line.
 
 
 ## 📓 Perl scipt: sRNA_counts.pl
