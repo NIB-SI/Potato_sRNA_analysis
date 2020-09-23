@@ -68,6 +68,7 @@ Writing output to Potato_sRNA_analysis/output/
 # pip install biopython
 sh FASTA_unique_sequences_all_IDs.sh pathTo/input.fasta outputDirectory 1
 ```
+Check python and pip version using ```pip --version;  python --version```. If version 3 are not your default versions use ```pip3 install biopython```.
 Provide path to the input fasta file (e.g. ../input/input.fasta), output directory (e.g. ../output) and number of threads (e.g. 1).
 
 
