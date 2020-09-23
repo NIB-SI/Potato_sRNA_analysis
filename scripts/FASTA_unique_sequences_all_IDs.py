@@ -25,7 +25,6 @@ with open(param4, 'w') as outFile:
     for record in SeqIO.parse(param3, 'fasta'):
         # print(record.id)
         if record.id not in record_ids1:
-            # print(record.id)
             SeqIO.write(record, outFile, 'fasta')
         else:
             pos = [i for i,x in enumerate(record_ids1) if x == record.id]
