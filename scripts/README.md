@@ -106,6 +106,7 @@ $ python3
 >>> from Bio import SeqIO
 >>> myFasta = SeqIO.parse("stu_mature.fasta", "fasta")
 >>> myTSV = SeqIO.write(myFasta, "stu_mature.tsv", "tab")
+>>> exit()
 ```
 e.g. for converting stu_mature.fasta to stu_mature.tsv using biopython.org/wiki/SeqIO
 
