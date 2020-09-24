@@ -91,7 +91,7 @@ Options:
 
 ## convert line breaks from DOS to Unix format (dos2unix) and vice versa (unix2dos)
 ```
-apt-get install dos2unix
+$ apt-get install dos2unix
 
 $ dos2unix --help
 dos2unix 6.0.4 (2013-12-30)
