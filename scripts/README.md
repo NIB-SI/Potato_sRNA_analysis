@@ -119,6 +119,12 @@ $ python3
 ```
 e.g. for converting stu_mature.fasta to stu_mature.tsv using biopython.org/wiki/SeqIO
 
+## replace Uracil with Thymine using sed and sponge (soaks up standard input and writes to a file)
+```
+# apt-get install moreutils
+$ sed '/^[^>]/ y/uU/tT/' pathTo/myFasta.fasta | pathTo/myFasta.fasta
+```
+
 ## Bash on Ubuntu on Windows
 
 Described at [How to Install and Use the Linux Bash Shell on Windows 10](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/)
