@@ -87,7 +87,7 @@ Options:
   inpfn.fasta               - input file (fasta format)
 ```
 
-# 📝 Useful links 
+# 📝 Useful links and code lines
 
 ## convert line breaks from DOS to Unix format (dos2unix) and vice versa (unix2dos)
 ```
@@ -99,6 +99,15 @@ Usage: dos2unix [options] [file ...] [-n infile outfile ...]
 ...
 ```
 <https://en.wikipedia.org/wiki/Unix2dos>
+
+## convert .fasta to tab delimited file
+```
+$ python3
+>>> from Bio import SeqIO
+>>> myFasta = SeqIO.parse("stu_mature.fasta", "fasta")
+>>> myTSV = SeqIO.write(myFasta, "stu_mature.tsv", "tab")
+```
+e.g. for converting stu_mature.fasta to stu_mature.tsv using biopython.org/wiki/SeqIO
 
 ## Bash on Ubuntu on Windows
 
