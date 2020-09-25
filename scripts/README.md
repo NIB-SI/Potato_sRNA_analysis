@@ -50,6 +50,7 @@ Input/Output interactive, however is suggested to use ../input/ ../output/ direc
 ## 📓 Markdown script: group_miRNA_sequences.Rmd
 ```
 R -e 'install.packages("rmarkdown", repos="https://cran.rstudio.com/")'
+R -e 'install.packages("tictoc", repos="https://cran.rstudio.com/")'
 
 # run script
 Rscript -e "rmarkdown::render('./Potato_sRNA_analysis/scripts/group_miRNA_sequences.Rmd')"
