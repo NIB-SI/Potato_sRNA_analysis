@@ -35,7 +35,7 @@ file.create(whereTo1)
 file.create(whereTo2)
 # colnames output 1
 temp = cbind("Name miRNA", "miRNA_5p", "miRNA_3p",
-             "miRNA length_5p", "miRNA length_3p", "miRNA counts_5p", "miRNA counts_3p")
+             "miRNA length_5p", "miRNA counts_5p", "miRNA length_3p", "miRNA counts_3p")
 write.table(temp, file = whereTo1, 
             append = FALSE, 
             sep = "\t",
