@@ -61,7 +61,10 @@ Writing output to Potato_sRNA_analysis/output/
 
 ## 📓 Bash script: combine_sequences.sh
 ```
-$ bash combine_sequences.sh
+$ bash ./Potato_sRNA_analysis/scripts/combine_sequences.sh \
+./Potato_sRNA_analysis/input/MIRNAs/ \
+./Potato_sRNA_analysis/output/
+
 ```
 Expecting input from Potato_sRNA_analysis/input/MIRNAs/
 
@@ -71,7 +74,7 @@ Writing output to Potato_sRNA_analysis/output/
 ## 📓 Bash script: FASTA_unique_sequences_all_IDs.sh
 ```
 $ pip install biopython
-$ bash FASTA_unique_sequences_all_IDs.sh pathTo/input.fasta outputDirectory 1
+$ bash FASTA_unique_sequences_all_IDs.sh ../input/input.fasta ../output/ 1
 ```
 Check python and pip version using ```pip --version;  python --version```. If version 3 is not your default versions, use ```pip3 install biopython```.
 
