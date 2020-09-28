@@ -11,7 +11,7 @@ output
 tree structure
 
 
-Read more about scripts in <p style="color:blue">./scripts/README.md</p>
+Read more about scripts in <span style="color:blue">./scripts/README.md</span>
 
 
 <h4><u>Recommended sRNA data analysis pipeline / accompanying directories:</u></h4>
