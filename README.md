@@ -37,3 +37,5 @@ Read more about scripts in ./scripts/README.md
 
 - ftp://ftp.solgenomics.net
 
+- http://solanaceae.plantbiology.msu.edu/
+
