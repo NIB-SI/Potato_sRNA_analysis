@@ -14,7 +14,7 @@ output
 Read more about scripts in ```./scripts/README.md``` :heavy_exclamation_mark:
 
 
-:round_pushpin: <h4><u>Recommended sRNA data analysis pipeline / accompanying directories:</u></h4>
+<h4>:blue_book::round_pushpin:<u>Recommended sRNA data analysis pipeline / accompanying directories:</u></h4>
 
   - **Pre-processing** # Known miRNAs identification
 
@@ -29,7 +29,7 @@ Read more about scripts in ```./scripts/README.md``` :heavy_exclamation_mark:
   - **Target_prediction** # sRNA target prediction
 
 
-:link: <h4><u>Useful bases:</h4>
+<h4>:link: <u>Useful bases:</h4>
 
 - www.mirbase.org
 
@@ -40,7 +40,7 @@ Read more about scripts in ```./scripts/README.md``` :heavy_exclamation_mark:
 - http://solanaceae.plantbiology.msu.edu/
 
 
-:link: <h4><u>Useful tools:</h4>
+<h4>:link: <u>Useful tools:</h4>
 
 - [The small RNA group software for analysis and processing of NGS datasets](http://www.smallrnagroup.uni-mainz.de/software.html)
 
