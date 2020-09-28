@@ -31,6 +31,8 @@ Read more about scripts in ./scripts/README.md
 
 <h4><u>Useful bases:</h4>
 - www.mirbase.org
-- rnacentral.org
+
+- https://rnacentral.org/
+
 - ftp://ftp.solgenomics.net
 
