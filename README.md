@@ -30,7 +30,7 @@ Read more about scripts in ./scripts/README.md
 
 
 <h4><u>Useful bases:</h4>
-- [mirbase](www.mirbase.org)
-- [rnacentral](rnacentral.org)
-- [solgenomics](ftp://ftp.solgenomics.net)
+- www.mirbase.org
+- rnacentral.org
+- ftp://ftp.solgenomics.net
 
