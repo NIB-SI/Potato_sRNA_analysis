@@ -1,3 +1,3 @@
 # 
 
-Minimal example files
+Minimal test and example files
