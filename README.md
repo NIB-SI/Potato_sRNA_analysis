@@ -16,17 +16,17 @@ Read more about scripts in ```./scripts/README.md``` :heavy_exclamation_mark:
 
 <h4>:blue_book::round_pushpin:<u>Recommended sRNA data analysis pipeline / accompanying directories:</u></h4>
 
-  - **Pre-processing** # Known miRNAs identification
+  - :open_file_folder: **Pre-processing** # Known miRNAs identification
 
-  - **Novel_miRNA_analysis** # Novel miRNAs identification # Assigning the predicted miRNAs to known or novel MIR genes and families
+  - :open_file_folder: **Novel_miRNA_analysis** # Novel miRNAs identification # Assigning the predicted miRNAs to known or novel MIR genes and families
 
-  - **isomiRID** # Identification of miRNA variants (i.e. isomiRs)
+  - :open_file_folder: **isomiRID** # Identification of miRNA variants (i.e. isomiRs)
 
-  - **phasiRNA_analysis** # Identification of PHAS loci and phasiRNAs 
+  - :open_file_folder: **phasiRNA_analysis** # Identification of PHAS loci and phasiRNAs 
 
-  - **DEA** # Differential expression analysis
+  - :open_file_folder: **DEA** # Differential expression analysis
 
-  - **Target_prediction** # sRNA target prediction
+  - :open_file_folder: **Target_prediction** # sRNA target prediction
 
 
 <h4>:link: <u>Useful bases:</h4>
