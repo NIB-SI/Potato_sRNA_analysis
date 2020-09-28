@@ -28,3 +28,9 @@ Read more about scripts in ./scripts/README.md
 
   - **Target_prediction** # sRNA target prediction
 
+
+<h4><u>Useful bases:</h4>
+- [mirbase](www.mirbase.org)
+- [rnacentral](rnacentral.org)
+- [solgenomics](ftp://ftp.solgenomics.net)
+
