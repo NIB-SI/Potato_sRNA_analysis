@@ -8,13 +8,13 @@ scripts
 
 output
 ```
-tree structure
+:evergreen_tree: tree structure
 
 
-Read more about scripts in ```./scripts/README.md```
+Read more about scripts in ```./scripts/README.md``` :heavy_exclamation_mark:
 
 
-<h4><u>Recommended sRNA data analysis pipeline / accompanying directories:</u></h4>
+:round_pushpin: <h4><u>Recommended sRNA data analysis pipeline / accompanying directories:</u></h4>
 
   - **Pre-processing** # Known miRNAs identification
 
@@ -29,7 +29,7 @@ Read more about scripts in ```./scripts/README.md```
   - **Target_prediction** # sRNA target prediction
 
 
-<h4><u>Useful bases:</h4>
+:link: <h4><u>Useful bases:</h4>
 
 - www.mirbase.org
 
@@ -40,7 +40,7 @@ Read more about scripts in ```./scripts/README.md```
 - http://solanaceae.plantbiology.msu.edu/
 
 
-<h4><u>Useful tools:</h4>
+:link: <h4><u>Useful tools:</h4>
 
 - [The small RNA group software for analysis and processing of NGS datasets](http://www.smallrnagroup.uni-mainz.de/software.html)
 
