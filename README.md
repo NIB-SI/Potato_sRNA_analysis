@@ -1,5 +1,5 @@
 # Potato_sRNA_analysis
-small RNA analyses [S. tuberosum]
+:sweet_potato: small RNA analyses [S. tuberosum]
 
 ```
 input
