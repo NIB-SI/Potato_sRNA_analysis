@@ -4,7 +4,7 @@ Minimal test and example files
 <br />
 
 - TestFile_Results.txt - as output from **ShortStack**’s 
-- TestFile_unique_stu_mature.fasta - as output from **FASTA_unique_sequences_all_IDs.sh**
+- TestFile_unique_stu_mature.fasta - as output from **FASTA_unique_sequences_all_IDs.sh** (and input for **sRNA_counts.pl**)
 - TestFile_number_and_list_of_duplicated_seqs.txt - as output from **FASTA_unique_sequences_all_IDs.sh**
 - TestFile_miRNA_5p-3p_grouping.txt - as output from **group_miRNA_sequences.Rmd**
 - TestFile_isomiRs.txt - as output from **group_miRNA_sequences.Rmd**
