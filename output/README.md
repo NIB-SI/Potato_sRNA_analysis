@@ -9,10 +9,12 @@ Minimal test and example files
 - TestFile_miRNA_5p-3p_grouping.txt - as output from **group_miRNA_sequences.Rmd**
 - TestFile_isomiRs.txt - as output from **group_miRNA_sequences.Rmd**
 - TestFile_known_miRNAs_counts.txt - as output from **sRNA_counts.pl**
+- TestFile-known_miRNAs.fasta - as output from chunk: _filter table by column, extract IDs and create subsetted fasta_
 - TestFile_mature_miRNAs.fasta - as output from **combine_sequences.sh**
 - TestFile_pre-miRNAs.fasta - as output from **combine_sequences.sh**
 - TestFile_star_miRNAs.fasta - as output from **combine_sequences.sh**
 - TestFile_r0-Cutoff.txt - as output from [isomiRID.py](https://github.com/lfelipedeoliveira/isomiRID)
+- TestFile.fas.1.clstr.sorted - as output from [cd-hit-est](http://weizhong-lab.ucsd.edu/cdhit_suite/cgi-bin/index.cgi?cmd=cd-hit-est)
 <br />
 
 - EXAMPLE_sRNAs_unmapped_uniqueIDs.fasta - output from code chunk: _non-unique to unique FASTA IDs_
