@@ -131,7 +131,7 @@ $ sed '/^[^>]/ y/uU/tT/' pathTo/myFasta.fasta | pathTo/myFasta.fasta
 
 ## filter table by column, extract IDs and create subsetted fasta
 ```
-# get IDs where count in sequential columns is > 0 (works for any number of additional columns contining numbers right from a column containing IDs)
+# get IDs for which (sums of) counts in sequential columns are > 0 
 awk '{count=0;for(i=2;i<=NF;i++){if($i==0)++count;}if(count<1)print}' ../output/known_miRNAs_counts.txt | cut -d ' ' -f1 | sed '1d' > ../output/IDs.txt
 awk '{count=0;for(i=2;i<=NF;i++){if($i==0)++count;}if(count<1)print}' ../output/known_miRNAs_counts.txt | cut -f1 | sed '1d' > ../output/longIDs.txt
 paste -d "\t" ../output/IDs.txt ../output/longIDs.txt > ../output/alias.txt
