@@ -10,9 +10,15 @@ output
 ```
 :evergreen_tree: tree structure
 
+<br/>
+
 
 Read more about scripts in ```./scripts/README.md``` :heavy_exclamation_mark:
 
+Read more about input/output in ```./input/README.md``` ```./output/README.md```
+
+<br/>
+<br/>
 
 <h4>:blue_book::round_pushpin:<u>Recommended sRNA data analysis pipeline / accompanying directories:</u></h4>
 
@@ -28,6 +34,7 @@ Read more about scripts in ```./scripts/README.md``` :heavy_exclamation_mark:
 
   - :open_file_folder: **Target_prediction** # sRNA target prediction
 
+<br/>
 
 <h4>:link: <u>Useful bases:</h4>
 
@@ -39,6 +46,7 @@ Read more about scripts in ```./scripts/README.md``` :heavy_exclamation_mark:
 
 - http://solanaceae.plantbiology.msu.edu/
 
+<br/>
 
 <h4>:link: <u>Useful tools:</h4>
 
