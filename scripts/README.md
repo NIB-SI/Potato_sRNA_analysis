@@ -68,7 +68,6 @@ Writing output to Potato_sRNA_analysis/output/
 $ bash ./Potato_sRNA_analysis/scripts/combine_sequences.sh \
   ./Potato_sRNA_analysis/input/MIRNAs/ \
   ./Potato_sRNA_analysis/output/
-
 ```
 Expecting input from Potato_sRNA_analysis/input/MIRNAs/
 
@@ -107,7 +106,7 @@ Options:
 
 # 📝 Useful links and code lines
 
-## convert line breaks from DOS to Unix format (dos2unix) and vice versa (unix2dos)
+## :wrench: convert line breaks from DOS to Unix format (dos2unix) and vice versa (unix2dos)
 ```
 $ apt-get install dos2unix
 
@@ -118,7 +117,7 @@ Usage: dos2unix [options] [file ...] [-n infile outfile ...]
 ```
 <https://en.wikipedia.org/wiki/Unix2dos>
 
-## convert .fasta to tab delimited file
+## :wrench: convert .fasta to tab delimited file
 ```
 $ python3
 >>> from Bio import SeqIO
@@ -128,13 +127,13 @@ $ python3
 ```
 e.g. for converting stu_mature.fasta to stu_mature.tsv using biopython.org/wiki/SeqIO
 
-## replace Uracil with Thymine using sed and sponge (soaks up standard input and writes to a file)
+## :wrench: replace Uracil with Thymine using sed and sponge (soaks up standard input and writes to a file)
 ```
 # apt-get install moreutils
 $ sed '/^[^>]/ y/uU/tT/' pathTo/myFasta.fasta | pathTo/myFasta.fasta
 ```
 
-## filter table by column, extract IDs and create subsetted fasta
+## :wrench: filter table by column, extract IDs and create subsetted fasta
 ```
 # get IDs for which (sums of) counts in sequential columns are > 0 
 $ awk -F "\t" '{
