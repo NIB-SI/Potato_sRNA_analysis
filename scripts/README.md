@@ -152,19 +152,24 @@ $ awk -F "\t" '{
       ../output/known_miRNAs_counts.txt | cut -f1 | sed '1d' > \
       ../output/longIDs.txt
 
-$ paste -d "\t" ../output/IDs.txt ../output/longIDs.txt > ../output/alias.txt
+$ paste -d "\t" ../output/IDs.txt ../output/longIDs.txt > \
+  ../output/alias.txt
 $ rm ../output/longIDs.txt
 
 # create subset fasta using those IDs
-$ xargs samtools faidx  ../output/unique_stu_mature.fasta < ../output/IDs.txt > ../output/known_miRNAs.fasta
+$ xargs samtools faidx  \
+  ../output/unique_stu_mature.fasta < ../output/IDs.txt > \
+  ../output/known_miRNAs.fasta
 $ rm ../output/IDs.txt
 
 # return extended IDs using alias translation table
 $ awk 'NR==FNR{a[$1]=$2;next}
-NF==2{$2=a[$2]; print ">" $2;next}
-1' FS='\t' ../output/alias.txt FS='>' ../output/known_miRNAs.fasta | sponge ../output/known_miRNAs.fasta
+    NF==2{$2=a[$2]; print ">" $2;next}
+    1' FS='\t' ../output/alias.txt FS='>' \
+    ../output/known_miRNAs.fasta | sponge ../output/known_miRNAs.fasta
 $ rm ../output/alias.txt
 ```
+```known_miRNAs_counts.txt ``` can be replaced by ```count_table.txt``` or other file of the same structure. Second column within ```alias.txt``` can be adapted manually. How many 0 are allowed can be regulated adapting ```count<(NF-1)``` condition. What is counted can be regulated adapting ```$i==0``` condition.
 
 ## Bash on Ubuntu on Windows
 
