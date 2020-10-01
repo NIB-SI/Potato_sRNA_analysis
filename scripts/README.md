@@ -149,7 +149,7 @@ $ awk -F "\t" '{
       }
       if(count<(NF-1))print
       }' \
-      ../output/count_table.txt | cut -f1 | sed '1d' > \
+      ../output/known_miRNAs_counts.txt | cut -f1 | sed '1d' > \
       ../output/longIDs.txt
 
 $ paste -d "\t" ../output/IDs.txt ../output/longIDs.txt > ../output/alias.txt
