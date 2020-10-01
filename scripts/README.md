@@ -132,20 +132,38 @@ $ sed '/^[^>]/ y/uU/tT/' pathTo/myFasta.fasta | pathTo/myFasta.fasta
 ## filter table by column, extract IDs and create subsetted fasta
 ```
 # get IDs for which (sums of) counts in sequential columns are > 0 
-awk '{count=0;for(i=2;i<=NF;i++){if($i==0)++count;}if(count<1)print}' ../output/known_miRNAs_counts.txt | cut -d ' ' -f1 | sed '1d' > ../output/IDs.txt
-awk '{count=0;for(i=2;i<=NF;i++){if($i==0)++count;}if(count<1)print}' ../output/known_miRNAs_counts.txt | cut -f1 | sed '1d' > ../output/longIDs.txt
-paste -d "\t" ../output/IDs.txt ../output/longIDs.txt > ../output/alias.txt
-rm ../output/longIDs.txt
+$ awk -F "\t" '{
+      count=0;
+      for(i=2;i<=NF;i++){
+          if($i==0)++count;
+      }
+      if(count<(NF-1))print
+      }' \
+      ../output/known_miRNAs_counts.txt | cut -d ' ' -f1 | sed '1d' > \
+      ../output/IDs.txt
+
+$ awk -F "\t" '{
+      count=0;
+      for(i=2;i<=NF;i++){
+          if($i==0)++count;
+      }
+      if(count<(NF-1))print
+      }' \
+      ../output/count_table.txt | cut -f1 | sed '1d' > \
+      ../output/longIDs.txt
+
+$ paste -d "\t" ../output/IDs.txt ../output/longIDs.txt > ../output/alias.txt
+$ rm ../output/longIDs.txt
 
 # create subset fasta using those IDs
-xargs samtools faidx  ../output/unique_stu_mature.fasta < ../output/IDs.txt > ../output/known_miRNAs.fasta
-rm ../output/IDs.txt
+$ xargs samtools faidx  ../output/unique_stu_mature.fasta < ../output/IDs.txt > ../output/known_miRNAs.fasta
+$ rm ../output/IDs.txt
 
 # return extended IDs using alias translation table
-awk 'NR==FNR{a[$1]=$2;next}
+$ awk 'NR==FNR{a[$1]=$2;next}
 NF==2{$2=a[$2]; print ">" $2;next}
 1' FS='\t' ../output/alias.txt FS='>' ../output/known_miRNAs.fasta | sponge ../output/known_miRNAs.fasta
-rm ../output/alias.txt
+$ rm ../output/alias.txt
 ```
 
 ## Bash on Ubuntu on Windows
