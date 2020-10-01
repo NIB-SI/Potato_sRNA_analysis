@@ -4,7 +4,7 @@ Minimal test and example files
 
 <br/>
 
-- MIRNAs - **ShortStack**´s result subdirectory
+- MIRNAs - **ShortStack**´s result subdirectory; input for few scripts
 
 <br/>
 
