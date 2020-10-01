@@ -50,7 +50,7 @@ Read more about input/output in ```./input/README.md``` ```./output/README.md```
 
 <h4>:link: <u>Useful tools:</h4>
 
-- [The small RNA group software for analysis and processing of NGS datasets](http://www.smallrnagroup.uni-mainz.de/software.html)
+- [_The small RNA group_ software for analysis and processing of NGS datasets](http://www.smallrnagroup.uni-mainz.de/software.html)
 
 - [UEA small RNA Workbench](http://srna-workbench.cmp.uea.ac.uk/)
 
@@ -72,6 +72,6 @@ Read more about input/output in ```./input/README.md``` ```./output/README.md```
 
 - [Bowtie](http://bowtie-bio.sourceforge.net/manual.shtml) and [Bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
 
-- [Mike Axtells' CleaveLand4](https://github.com/MikeAxtell/CleaveLand4/) [Mike Axtells' ShortStack](https://github.com/MikeAxtell/ShortStack)
+- [_Mike Axtells'_ CleaveLand4](https://github.com/MikeAxtell/CleaveLand4/) [Mike Axtells' ShortStack](https://github.com/MikeAxtell/ShortStack)
 
-- [de Oliveiras' isomiRID](https://github.com/lfelipedeoliveira/isomiRID)
+- [_de Oliveiras'_ isomiRID](https://github.com/lfelipedeoliveira/isomiRID)
