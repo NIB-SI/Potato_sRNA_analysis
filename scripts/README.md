@@ -177,6 +177,93 @@ $ rm ../output/alias.txt
 ```
 ```known_miRNAs_counts.txt ``` can be replaced by ```count_table.txt``` or other file of the same structure. Second column within ```alias.txt``` can be adapted manually. How many 0 are allowed can be regulated adapting ```count<(NF-1)``` condition. What is counted can be regulated adapting ```$i==0``` condition.
 
+<br/>
+<br/>
+
+## :clipboard: Obtaining materials from the GitHub
+
+i) use wget to pull down the ```raw``` file
+```
+$ wget https://raw.githubusercontent.com/username/reponame/path/to/file
+```
+ii) use git clone to pull the complete repository (prerequisites: user with ```sudo``` privileges)
+```
+$ sudo apt update
+$ sudo apt install git
+$ git clone https://github.com/username/reponame.git
+```
+
+## :clipboard: Install Perl on Ubuntu-like Linux OS
+i) Install Perl on Ubuntu-like Linux OS (prerequisites: user with ```sudo``` privileges)
+```
+$ sudo apt update
+$ sudo apt-get install perl
+# check version 
+$ perl -v
+```
+More details for installing Perl can be found at [perl.org](www.perl.org/get.html#unix_like)
+
+ii) Use [CPAN](www.cpan.org) (‘Comprehensive Perl Archive Network’) to install Perl modules
+
+iii) Install different version of Perl
+```
+$ sudo cpan App::perlbrew
+$ perlbrew init
+
+# see which versions are available:
+$ perlbrew available
+
+# install version 5.X.Y
+$ perlbrew install perl-5.X.Y
+
+# list all installed versions
+$ perlbrew list
+
+# change Perl for the current shell # (or per your sessions)
+$ perlbrew use perl-5.X.Y # (or perlbrew switch perl-5.X.Y)
+$ which perl
+
+# revert version to default for the current shell # (or per your sessions)
+$ perlbrew off # (or perlbrew switch-off)
+```
+
+## :clipboard: Install R on Ubuntu-like Linux OS 
+Install R on Ubuntu-like Linux OS (prerequisites: user with sudo privileges) with add-apt-repository (adapt values in the square brackets and delete the brackets)
+i) Import the repository public key
+```
+$ apt-key adv --keyserver [from this location or server] --recv-keys [retrieve key(s)]
+```
+ii) Add the CRAN repository to your system sources’ list
+```
+$ sudo add-apt-repository ‘deb https://cloud.r-project.org/bin/linux/ubuntu [type appropriate selection from https://cloud.r-project.org/bin/linux/ubuntu/]’
+```
+iii) Install the complete R system
+```
+$ sudo apt-get update
+$ sudo apt install r-base
+$ sudo apt-get install r-base-dev
+$ sudo apt install build-essential
+```
+More details available at [cran.r-project README](https://cran.r-project.org/bin/linux/ubuntu/README.html)
+
+
+## :clipboard: pip 
+Installing pip for Python 3 and Python2 on Ubuntu-like OS (prerequisites: user with sudo privileges)
+```
+# Installing pip for Python 3
+$ sudo apt update
+$ sudo apt install python3-pip
+# Installing pip for Python 2
+$ sudo apt update 
+$ sudo apt install python2
+$ curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py
+$ sudo python2 get-pip.py
+```
+
+
+<br/>
+<br/>
+
 ## :pushpin: Bash on Ubuntu on Windows
 
 Described at [How to Install and Use the Linux Bash Shell on Windows 10](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/)
