@@ -25,6 +25,7 @@ $ apt-get install moreutils
 # changing the existing fasta file
 $ INP="test.fasta"
 $ awk '/^>/ {$0=$0".Seq"++count[$0]}1' $INP | sponge $INP
+
 # or without sponge, using input/output files
 $ awk '/^>/ {$0=$0"_Seq"++count[$0]}1' input.fasta > output.fasta
 ```
@@ -40,6 +41,7 @@ R -e 'install.packages("devtools", repos="https://cran.rstudio.com/")'
 
 R -e 'devtools::install_github("AnalytixWare/ShinySky")'
 
+
 # run app
 R -e "shiny::runApp('./Potato_sRNA_analysis/scripts/MIR_loci_overlaps.R')"
 ```
@@ -50,7 +52,9 @@ Input/Output interactive, however is suggested to use ../input/ ../output/ direc
 ## 📓 Markdown script: group_miRNA_sequences.Rmd
 ```
 R -e 'install.packages("rmarkdown", repos="https://cran.rstudio.com/")'
+
 R -e 'install.packages("tictoc", repos="https://cran.rstudio.com/")'
+
 
 # run script
 Rscript -e "rmarkdown::render('./Potato_sRNA_analysis/scripts/group_miRNA_sequences.Rmd')"
@@ -62,8 +66,8 @@ Writing output to Potato_sRNA_analysis/output/
 ## 📓 Bash script: combine_sequences.sh
 ```
 $ bash ./Potato_sRNA_analysis/scripts/combine_sequences.sh \
-./Potato_sRNA_analysis/input/MIRNAs/ \
-./Potato_sRNA_analysis/output/
+  ./Potato_sRNA_analysis/input/MIRNAs/ \
+  ./Potato_sRNA_analysis/output/
 
 ```
 Expecting input from Potato_sRNA_analysis/input/MIRNAs/
@@ -74,6 +78,7 @@ Writing output to Potato_sRNA_analysis/output/
 ## 📓 Bash script: FASTA_unique_sequences_all_IDs.sh
 ```
 $ pip install biopython
+
 $ bash FASTA_unique_sequences_all_IDs.sh ../input/input.fasta ../output/ 1
 ```
 Check python and pip version using ```pip --version;  python --version```. If version 3 is not your default versions, use ```pip3 install biopython```.
@@ -156,11 +161,13 @@ $ paste -d "\t" ../output/IDs.txt ../output/longIDs.txt > \
   ../output/alias.txt
 $ rm ../output/longIDs.txt
 
-# create subset fasta using those IDs
+
+# create subsetted fasta using those IDs
 $ xargs samtools faidx  \
   ../output/unique_stu_mature.fasta < ../output/IDs.txt > \
   ../output/known_miRNAs.fasta
 $ rm ../output/IDs.txt
+
 
 # return extended IDs using alias translation table
 $ awk 'NR==FNR{a[$1]=$2;next}
