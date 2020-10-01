@@ -19,6 +19,8 @@ $ apt-get install moreutils
 
 ```
 
+<br/>
+
 ## In case of non-unique FASTA IDs -> make them unique
 ### 🏷 one possible way as follows:
 ```
@@ -29,6 +31,9 @@ $ awk '/^>/ {$0=$0".Seq"++count[$0]}1' $INP | sponge $INP
 # or without sponge, using input/output files
 $ awk '/^>/ {$0=$0"_Seq"++count[$0]}1' input.fasta > output.fasta
 ```
+
+<br/>
+
 
 ## 📓 Shiny script: MIR_loci_overlaps.R
 
@@ -103,6 +108,9 @@ Options:
   -partial                  - also match as a subsequence (D=exact match)
   inpfn.fasta               - input file (fasta format)
 ```
+
+<br/>
+<br/>
 
 # 📝 Useful links and code lines
 
@@ -182,11 +190,11 @@ $ rm ../output/alias.txt
 
 ## :clipboard: Obtaining materials from the GitHub
 
-i) use wget to pull down the ```raw``` file
+- use wget to pull down the ```raw``` file
 ```
 $ wget https://raw.githubusercontent.com/username/reponame/path/to/file
 ```
-ii) use git clone to pull the complete repository (prerequisites: user with ```sudo``` privileges)
+- use git clone to pull the complete repository (prerequisites: user with ```sudo``` privileges)
 ```
 $ sudo apt update
 $ sudo apt install git
@@ -194,7 +202,7 @@ $ git clone https://github.com/username/reponame.git
 ```
 
 ## :clipboard: Install Perl on Ubuntu-like Linux OS
-i) Install Perl on Ubuntu-like Linux OS (prerequisites: user with ```sudo``` privileges)
+- Install Perl on Ubuntu-like Linux OS (prerequisites: user with ```sudo``` privileges)
 ```
 $ sudo apt update
 $ sudo apt-get install perl
@@ -203,9 +211,9 @@ $ perl -v
 ```
 More details for installing Perl can be found at [perl.org](www.perl.org/get.html#unix_like)
 
-ii) Use [CPAN](www.cpan.org) (‘Comprehensive Perl Archive Network’) to install Perl modules
+- Use [CPAN](www.cpan.org) (‘Comprehensive Perl Archive Network’) to install Perl modules
 
-iii) Install different version of Perl
+- Install different version of Perl
 ```
 $ sudo cpan App::perlbrew
 $ perlbrew init
@@ -229,15 +237,15 @@ $ perlbrew off # (or perlbrew switch-off)
 
 ## :clipboard: Install R on Ubuntu-like Linux OS 
 Install R on Ubuntu-like Linux OS (prerequisites: user with sudo privileges) with add-apt-repository (adapt values in the square brackets and delete the brackets)
-i) Import the repository public key
+- Import the repository public key
 ```
 $ apt-key adv --keyserver [from this location or server] --recv-keys [retrieve key(s)]
 ```
-ii) Add the CRAN repository to your system sources’ list
+- Add the CRAN repository to your system sources’ list
 ```
 $ sudo add-apt-repository ‘deb https://cloud.r-project.org/bin/linux/ubuntu [type appropriate selection from https://cloud.r-project.org/bin/linux/ubuntu/]’
 ```
-iii) Install the complete R system
+- Install the complete R system
 ```
 $ sudo apt-get update
 $ sudo apt install r-base
@@ -253,6 +261,7 @@ Installing pip for Python 3 and Python2 on Ubuntu-like OS (prerequisites: user w
 # Installing pip for Python 3
 $ sudo apt update
 $ sudo apt install python3-pip
+
 # Installing pip for Python 2
 $ sudo apt update 
 $ sudo apt install python2
@@ -276,6 +285,8 @@ Described at [How to Install and Use the Linux Bash Shell on Windows 10](https:/
 
 [Wine](https://www.winehq.org/)
 
+<br/>
+<br/>
 
 ## :notebook_with_decorative_cover: Shiny and R Markdown
 
@@ -284,6 +295,8 @@ Described at [How to Install and Use the Linux Bash Shell on Windows 10](https:/
 [Welcome to Shiny](https://shiny.rstudio.com/tutorial/written-tutorial/lesson1/)
 
 [R Markdown introduction](https://rmarkdown.rstudio.com/lesson-1.html)
+
+<br/>
 
 ## :green_book: FAIR data
 
