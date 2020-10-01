@@ -177,20 +177,20 @@ $ rm ../output/alias.txt
 ```
 ```known_miRNAs_counts.txt ``` can be replaced by ```count_table.txt``` or other file of the same structure. Second column within ```alias.txt``` can be adapted manually. How many 0 are allowed can be regulated adapting ```count<(NF-1)``` condition. What is counted can be regulated adapting ```$i==0``` condition.
 
-## Bash on Ubuntu on Windows
+## :pushpin: Bash on Ubuntu on Windows
 
 Described at [How to Install and Use the Linux Bash Shell on Windows 10](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/)
 
-## Cygwin
+## :pushpin: Cygwin
 
 [Cygwin User's Guide](https://cygwin.com/cygwin-ug-net.html)
 
-## Wine
+## :pushpin: Wine
 
 [Wine](https://www.winehq.org/)
 
 
-## Shiny and R Markdown
+## :notebook_with_decorative_cover: Shiny and R Markdown
 
 [How to launch a Shiny app](https://shiny.rstudio.com/articles/running.html/)
 
@@ -198,7 +198,7 @@ Described at [How to Install and Use the Linux Bash Shell on Windows 10](https:/
 
 [R Markdown introduction](https://rmarkdown.rstudio.com/lesson-1.html)
 
-## FAIR data
+## :green_book: FAIR data
 
 [The FAIR Guiding Principles for scientific data management and stewardship](https://www.nature.com/articles/sdata201618)
 
